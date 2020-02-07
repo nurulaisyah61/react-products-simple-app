@@ -3,8 +3,9 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 50px;
   pointer-events: none;
+  margin: auto 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -34,5 +35,69 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.main {
+  margin-bottom: 50px ;
+  padding-top: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.footer {
+  bottom: 0;
+  left: 0;
+  height: 45px;;
+  display: flex;
+  justify-content: flex-end;
+  
+}
+button {
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+  background: #e3e3e3;
+}
+
+.footer, .header {
+  position: fixed;
+  width: 100%;
+  background: cyan
+
+}
+
+.header {
+  display: flex;
+}
+
+.card {
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 20px;
+}
+
+.card .auto {
+  margin: auto;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+@media (max-width:725px) {
+  .grid-2 {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
